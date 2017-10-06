@@ -1,0 +1,29 @@
+{
+  "name": "ccss",
+  "version": "1.0.0",
+  "description": "Checks CSS properties order",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lajule/ccss.git"
+  },
+  "keywords": [
+    "css",
+    "concentric-css"
+  ],
+  "author": "Julien Rouzieres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lajule/ccss/issues"
+  },
+  "homepage": "https://github.com/Lajule/ccss#readme",
+  "dependencies": {
+    "chokidar": "^1.7.0",
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
+    "css": "^2.2.1"
+  }
+}
