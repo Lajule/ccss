@@ -16,7 +16,8 @@ for (let argv = 0; argv < program.args.length; ++argv) {
   const source = program.args[argv];
 
   try {
-    const {type, stylesheet} = css.parse(fs.readFileSync(source, "utf8"), {source});
+    const str = fs.readFileSync(source, "utf8");
+    const {type, stylesheet} = css.parse(str, {source});
 
     if (type === "stylesheet") {
       console.log(stylesheet);
