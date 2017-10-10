@@ -9,10 +9,14 @@ program
   .option("-w, --watch", "Use watch mode")
   .parse(process.argv);
 
+const sources = program.args;
+const watch = program.watch;
 let code = 0;
 
-for (let argv = 0; argv < program.args.length; ++argv) {
-  code += parse(program.args[argv]);
+for (let argv = 0; argv < sources.length; ++argv) {
+  code += parse(sources[argv], watch);
 }
 
-process.exit(code);
+if (!watch) {
+  process.exit(code);
+}
