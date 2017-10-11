@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Checks CSS properties order",
   "bin": {
-    "ccss": "./bin/csss"
+    "ccss": "./bin/ccss"
   },
   "repository": {
     "type": "git",
