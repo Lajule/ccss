@@ -1,6 +1,7 @@
+#!/usr/bin/env node
 const commander = require("commander");
-const check = require("./lib/check");
-const {description, version} = require("./package");
+const check = require("../lib/check");
+const {description, version} = require("../package");
 
 commander
   .version(version)
