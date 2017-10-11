@@ -2,6 +2,16 @@
 
 Checks CSS properties order
 
+
+https://github.com/brandon-rhodes/Concentric-CSS
+
+
+## Installation
+
+```
+> npm install Lajule/ccss -g
+```
+
 ## Usage
 
 ```
@@ -19,5 +29,3 @@ Checks CSS properties order
     -h, --help     output usage information
 
 ```
-
-https://github.com/brandon-rhodes/Concentric-CSS
