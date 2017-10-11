@@ -1,22 +1,22 @@
-const program = require("commander");
-const parse = require("./lib/parse");
+const commander = require("commander");
+const check = require("./lib/check");
 const {description, version} = require("./package");
 
-program
+commander
   .version(version)
   .description(description)
   .arguments("<files...>")
-  .option("-w, --watch", "Use watch mode")
+  .option("-w, --watch", "use watch mode")
   .parse(process.argv);
 
-const sources = program.args;
-const watch = program.watch;
-let code = 0;
+const sources = commander.args;
+const watchOption = commander.watch;
+let exitCode = 0;
 
-for (let argv = 0; argv < sources.length; ++argv) {
-  code += parse(sources[argv], watch);
+for (let sourceIndex = 0; sourceIndex < sources.length; ++sourceIndex) {
+  exitCode += check(sources[sourceIndex], {watchOption});
 }
 
-if (!watch) {
-  process.exit(code);
+if (!watchOption) {
+  process.exit(exitCode);
 }
