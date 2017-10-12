@@ -1,6 +1,6 @@
 # ccss
 
-This tool checks if the properties of yours CSS files respect the [concentric order][1].
+This tool checks if the properties of yours CSS files respect the [concentric order][1] :straight_ruler:.
 
 ## Installation
 
