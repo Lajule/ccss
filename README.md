@@ -5,13 +5,13 @@ This tool checks if the properties of yours CSS files respect the [concentric or
 ## Installation
 
 ```sh
-> npm install Lajule/ccss -g
+npm install Lajule/ccss -g
 ```
 
 ## Usage
 
 ```sh
-> ccss -h
+$ ccss -h
 
   Usage: ccss [options] <files...>
 
@@ -23,7 +23,6 @@ This tool checks if the properties of yours CSS files respect the [concentric or
     -V, --version  output the version number
     -w, --watch    use watch mode
     -h, --help     output usage information
-
 ```
 
 ## Example
@@ -43,7 +42,7 @@ Consider the following CSS file (test.css):
 Now let's use `ccss`:
 
 ```sh
-> ccss test.css
+$ ccss test.css
 test.css:4: Property background-color must be at line 3
 ```
 
