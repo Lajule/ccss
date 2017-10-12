@@ -1,20 +1,16 @@
 # ccss
 
-Checks CSS properties order
-
-
-https://github.com/brandon-rhodes/Concentric-CSS
-
+This tool checks if the properties of yours CSS files respect the [concentric order][1].
 
 ## Installation
 
-```
+```sh
 > npm install Lajule/ccss -g
 ```
 
 ## Usage
 
-```
+```sh
 > ccss -h
 
   Usage: ccss [options] <files...>
@@ -29,3 +25,26 @@ https://github.com/brandon-rhodes/Concentric-CSS
     -h, --help     output usage information
 
 ```
+
+## Example
+
+Consider the following CSS file (test.css):
+
+```css
+
+.head {
+  color: lightgray;
+  background-color: dimgray;
+  height: 40vh;
+}
+
+```
+
+Now let's use `ccss`:
+
+```sh
+> ccss test.css
+test.css:4: Property background-color must be at line 3
+```
+
+[1]: https://github.com/brandon-rhodes/Concentric-CSS "Concentric CSS"
