@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 const commander = require("commander");
 const check = require("../lib/check");
-const {description, version} = require("../package");
+const { description, version } = require("../package");
 
 commander
   .version(version)
@@ -15,7 +15,7 @@ const watchOption = commander.watch;
 let exitCode = 0;
 
 for (let sourceIndex = 0; sourceIndex < sources.length; ++sourceIndex) {
-  exitCode += check(sources[sourceIndex], {watchOption});
+  exitCode += check(sources[sourceIndex], { watchOption });
 }
 
 if (!watchOption) {
