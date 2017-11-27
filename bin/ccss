@@ -12,6 +12,7 @@ commander
 
 const sources = commander.args;
 const watchOption = commander.watch;
+
 let exitCode = 0;
 
 for (let sourceIndex = 0; sourceIndex < sources.length; ++sourceIndex) {
