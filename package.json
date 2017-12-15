@@ -24,5 +24,8 @@
     "colors": "^1.1.2",
     "commander": "^2.11.0",
     "css": "^2.2.1"
+  },
+  "devDependencies": {
+    "jscs": "^3.0.7"
   }
 }
