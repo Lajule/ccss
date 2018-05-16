@@ -26,6 +26,6 @@
     "css": "^2.2.1"
   },
   "devDependencies": {
-    "jscs": "^3.0.7"
+    "prettier": "^1.12.1"
   }
 }
