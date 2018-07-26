@@ -11,7 +11,7 @@ npm install Lajule/ccss -g
 ## Usage
 
 ```sh
-$ ccss -h
+ccss -h
 
   Usage: ccss [options] <files...>
 
@@ -42,7 +42,7 @@ Consider the following CSS file (test.css):
 Now let's use `ccss`:
 
 ```sh
-$ ccss test.css
+ccss test.css
 test.css:4: Property background-color must be at line 3
 ```
 
