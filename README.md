@@ -10,8 +10,9 @@ npm install Lajule/ccss -g
 
 ## Usage
 
-```sh
-ccss -h
+Type the following command `ccss -h` to display this help message:
+
+```
 
   Usage: ccss [options] <files...>
 
