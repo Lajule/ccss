@@ -15,9 +15,9 @@ const watchOption = commander.watch;
 
 let exitCode = 0;
 
-for (let sourceIndex = 0; sourceIndex < sources.length; ++sourceIndex) {
-  exitCode += check(sources[sourceIndex], { watchOption });
-}
+sources.forEach(source => {
+  exitCode += check(source, { watchOption });
+});
 
 if (!watchOption) {
   process.exit(exitCode);
